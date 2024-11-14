@@ -1,0 +1,120 @@
+:root{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: left;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+}
+
+.container canvas, .overlay{
+    position: absolute;
+}
+
+canvas{
+    position:fixed;
+    width: 0;
+    height: 0;
+    border: solid 1px red;
+
+}
+
+.overlay {
+    top: 20px;
+    left: 20px;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px;
+}
+
+body {
+    width: 100vh;
+    color: whitesmoke;
+    position: absolute;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+h1, h2, h3, blockquote {
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+section{
+    grid-column: 2 /  span 8;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.25);;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 20rem;
+    margin-bottom:40rem;
+}
+
+.two{
+    grid-column: 2 /  span 9;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.25);;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 5rem;
+    margin-bottom:40rem;
+}
+
+blockquote{
+    padding: 0;
+    grid-column: 2 / span 10;
+    margin: 15rem;
+    font-size: 4rem;
+}
+
+.project{
+    grid-column: 2 / span 11;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.25);;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 10rem;
+    margin-bottom:30rem;
+}
+
+
+
+.left{
+    grid-column: 2 / span 12;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.25);;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 10rem;
+    margin-bottom:30rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 4fr;
+    }
+
+    header, section, blockquote {
+        grid-column: 1 / -1;
+    }
+}

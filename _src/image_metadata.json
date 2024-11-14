@@ -1,0 +1,22 @@
+[
+  {
+    "filename":"chels.jpg",
+    "filepath": "assets/images/chels.jpg"
+  },
+  {
+    "filename": "favicon.png",
+    "filepath": "assets/images/favicon.png"
+  },
+  {
+    "filename": "space.jpg",
+    "filepath": "assets/images/space.jpg"
+  },
+  {
+    "filename": "texture.jpg",
+    "filepath": "assets/images/texture.jpg"
+  },
+  {
+    "filename": "texture2.jpg",
+    "filepath": "assets/images/texture2.jpg"
+  }
+]
